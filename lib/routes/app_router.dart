@@ -7,8 +7,14 @@ class AppRouter extends RootStackRouter {
   // Contém todas as rotas existentes no app
   @override
   List<AutoRoute> get routes => [
-        AutoRoute(page: RouteA.page, initial: true),
-        AutoRoute(page: RouteB.page),
-        AutoRoute(page: RouteC.page),
+        AutoRoute(
+          page: MainRoute.page,
+          initial: true,
+          children: [
+            AutoRoute(page: HomeRoute.page),
+            AutoRoute(page: ProfileRoute.page),
+            AutoRoute(page: SettingsRoute.page),
+          ],
+        ),
       ];
 }
