@@ -8,112 +8,64 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:auto_route/auto_route.dart' as _i5;
-import 'package:auto_route_integration/screens/about_screen.dart' as _i1;
-import 'package:auto_route_integration/screens/home_screen.dart' as _i2;
-import 'package:auto_route_integration/screens/login_screen.dart' as _i3;
-import 'package:auto_route_integration/screens/profile_screen.dart' as _i4;
-import 'package:flutter/material.dart' as _i6;
+import 'package:auto_route/auto_route.dart' as _i4;
+import 'package:auto_route_integration/screens/screen_a.dart' as _i1;
+import 'package:auto_route_integration/screens/screen_b.dart' as _i2;
+import 'package:auto_route_integration/screens/screen_c.dart' as _i3;
 
 /// generated route for
-/// [_i1.AboutScreen]
-class AboutRoute extends _i5.PageRouteInfo<void> {
-  const AboutRoute({List<_i5.PageRouteInfo>? children})
+/// [_i1.ScreenA]
+class RouteA extends _i4.PageRouteInfo<void> {
+  const RouteA({List<_i4.PageRouteInfo>? children})
       : super(
-          AboutRoute.name,
+          RouteA.name,
           initialChildren: children,
         );
 
-  static const String name = 'AboutRoute';
+  static const String name = 'RouteA';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
-      return const _i1.AboutScreen();
+      return const _i1.ScreenA();
     },
   );
 }
 
 /// generated route for
-/// [_i2.HomeScreen]
-class HomeRoute extends _i5.PageRouteInfo<void> {
-  const HomeRoute({List<_i5.PageRouteInfo>? children})
+/// [_i2.ScreenB]
+class RouteB extends _i4.PageRouteInfo<void> {
+  const RouteB({List<_i4.PageRouteInfo>? children})
       : super(
-          HomeRoute.name,
+          RouteB.name,
           initialChildren: children,
         );
 
-  static const String name = 'HomeRoute';
+  static const String name = 'RouteB';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
-      return const _i2.HomeScreen();
+      return const _i2.ScreenB();
     },
   );
 }
 
 /// generated route for
-/// [_i3.LoginScreen]
-class LoginRoute extends _i5.PageRouteInfo<LoginRouteArgs> {
-  LoginRoute({
-    _i6.Key? key,
-    required dynamic Function(bool?) onResult,
-    List<_i5.PageRouteInfo>? children,
-  }) : super(
-          LoginRoute.name,
-          args: LoginRouteArgs(
-            key: key,
-            onResult: onResult,
-          ),
-          initialChildren: children,
-        );
-
-  static const String name = 'LoginRoute';
-
-  static _i5.PageInfo page = _i5.PageInfo(
-    name,
-    builder: (data) {
-      final args = data.argsAs<LoginRouteArgs>();
-      return _i3.LoginScreen(
-        key: args.key,
-        onResult: args.onResult,
-      );
-    },
-  );
-}
-
-class LoginRouteArgs {
-  const LoginRouteArgs({
-    this.key,
-    required this.onResult,
-  });
-
-  final _i6.Key? key;
-
-  final dynamic Function(bool?) onResult;
-
-  @override
-  String toString() {
-    return 'LoginRouteArgs{key: $key, onResult: $onResult}';
-  }
-}
-
-/// generated route for
-/// [_i4.ProfileScreen]
-class ProfileRoute extends _i5.PageRouteInfo<void> {
-  const ProfileRoute({List<_i5.PageRouteInfo>? children})
+/// [_i3.ScreenC]
+class RouteC extends _i4.PageRouteInfo<void> {
+  const RouteC({List<_i4.PageRouteInfo>? children})
       : super(
-          ProfileRoute.name,
+          RouteC.name,
           initialChildren: children,
         );
 
-  static const String name = 'ProfileRoute';
+  static const String name = 'RouteC';
 
-  static _i5.PageInfo page = _i5.PageInfo(
+  static _i4.PageInfo page = _i4.PageInfo(
     name,
     builder: (data) {
-      return const _i4.ProfileScreen();
+      return const _i3.ScreenC();
     },
   );
 }
