@@ -11,8 +11,8 @@ class MainScreen extends StatelessWidget {
     return AutoTabsRouter(
       routes: [
         HomeRoute(),
-        ProfileRoute(),
-        SettingsRoute(),
+        ProfileNavRoute(),
+        SettingsNavRoute(),
       ],
       builder: (context, child) {
         final tabsRouter = AutoTabsRouter.of(context);
